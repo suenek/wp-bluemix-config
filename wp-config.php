@@ -21,16 +21,16 @@
 $vcap = getenv("VCAP_SERVICES");
 $data = json_decode($vcap, true);
 $creds = $data['cleardb'][0]['credentials'];
-define('DB_NAME', $creds['name']);
+define('DB_NAME', 'cdb_eval_bdb7623b7215330');
 
 /** MySQL database username */
-define('DB_USER', $creds['username']);
+define('DB_USER', '7555cedcbe9d5a');
 
 /** MySQL database password */
-define('DB_PASSWORD', $creds['password']);
+define('DB_PASSWORD', '94b81e31');
 
 /** MySQL hostname */
-define('DB_HOST', $creds['hostname']);
+define('DB_HOST', 'us-mm-demo-dca-01.cleardb.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
